@@ -126,7 +126,7 @@ export default function Home() {
               </div>
             </div>
             <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium hidden md:block hover:opacity-90 transition">
-              Subscribe
+              Login
             </button>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">K-PopPulse</h3>
+              <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Candy Canvas</h3>
               <p className="text-gray-400">Your ultimate source for K-pop news, updates, and entertainment.</p>
             </div>
             <div>
@@ -286,7 +286,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400 text-sm">
-            <p>© 2025 K-PopPulse. All rights reserved.</p>
+            <p>© 2025 Candy Canvas. All rights reserved.</p>
           </div>
         </div>
       </footer>
