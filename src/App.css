@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav .links a {
+  margin-right: 2rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+nav .links a:hover {
+  color: #e74c3c;
+}
+
+/* Search Bar */
+input[type="text"] {
+  padding: 12px 16px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  width: 300px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Card Styles for News Articles */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  color: #777;
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #3498db;
+}
+
+footer a:hover {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    margin-top: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
