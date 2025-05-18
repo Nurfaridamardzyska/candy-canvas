@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function Home() {
+  const navigate = useNavigate();
   // Dummy news data
   const newsItems = [
     {
@@ -98,13 +102,15 @@ export default function Home() {
     </svg>
   );
 
+
+  
   return (
     <div className="bg-gradient-to-br from-purple-50 to-pink-50 min-h-screen">
       {/* Navigation */}
       <nav className="bg-white shadow-md py-4 sticky top-0 z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">K-PopPulse</h1>
+            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">Candy Canvas</h1>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#" className="font-medium hover:text-pink-500 transition">Home</a>
@@ -125,9 +131,18 @@ export default function Home() {
                 <SearchIcon />
               </div>
             </div>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium hidden md:block hover:opacity-90 transition">
-              Login
-            </button>
+            <button
+        onClick={() => navigate("/login")}
+        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium hidden md:block hover:opacity-90 transition"
+      >
+        Login
+      </button>
+      <button
+        onClick={() => navigate("/register")}
+        className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium hidden md:block hover:opacity-90 transition"
+      >
+        Register
+      </button>
           </div>
         </div>
       </nav>
